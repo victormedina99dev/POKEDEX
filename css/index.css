@@ -7,28 +7,7 @@ body{
 
 }
 
-@media (max-width: 700px) {
-    body {
-        padding: 10px;
-    }
 
-    #pokemon-container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    #pokemon-image {
-        width: 100%;
-        height: auto;
-    }
-
-    #title {
-        font-size: 1.5em;
-        margin-left: 40px;
-        margin-right: 40px;
-        
-    }
-}
 
 a{
     text-decoration: none;
@@ -109,4 +88,72 @@ a{
 
 #search-button:active{
     box-shadow: inset 2px 2px 5px #000000;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+        background-image: url(../img/pokedexfondo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgb(165, 30, 30);
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+    #title{
+        font-size: 1.5em;
+        margin: 10px auto; /* Centrado y con menos margen */
+        max-width: 90%;
+        margin-left: 70px;
+        margin-right: 70px;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        color:rgba(255, 0, 0, 0.925) ; /* Ancho ajustado para móviles */
+    }
+    
+
+    #pokemon-container {
+        width: 95%; /* Aumentar el ancho para mejor uso del espacio */
+        padding: 1.5px;
+        max: width 100px;
+        background-color: yellowgreen;
+        color: rgba(49, 44, 44, 0.863);
+        border-color: #00000000;
+        box-shadow: none;
+        border-color: #1f1b1bbe;
+        border-width: 5px;
+    }
+
+    #pokemon-image {
+        width: 30%;
+        height: auto;
+        /* Ajustar el tamaño de la imagen */
+    }
+    
+    #pokemon-input {
+        width: 70%; /* Campo de entrada más ancho para mejor interacción táctil */
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: yellowgreen;
+        border-color: #3a3535cb;
+        border-width: 3px;
+        box-shadow: none;
+    }
+
+    #search-button {
+        padding: 10px 20px;
+        margin-bottom: 15px;
+        margin-left: 359px; /* Botón más grande para tocarlo más fácilmente */
+    }
+
+    #container-search {
+        display: flex;
+        flex-direction: column; /* Apilar la entrada y el botón verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+    }
 }
