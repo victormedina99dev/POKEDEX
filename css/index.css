@@ -113,7 +113,7 @@ a{
         margin-right: 70px;
         background-color: rgba(0, 0, 0, 0);
         box-shadow: none;
-        color:rgba(255, 0, 0, 0.925) ; /* Ancho ajustado para móviles */
+        color:rgb(255, 255, 255) ; /* Ancho ajustado para móviles */
     }
     
 
@@ -148,7 +148,7 @@ a{
     #search-button {
         padding: 10px 20px;
         margin-bottom: 15px;
-        margin-left: 359px; /* Botón más grande para tocarlo más fácilmente */
+         /* Botón más grande para tocarlo más fácilmente */
     }
 
     #container-search {
