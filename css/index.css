@@ -1,10 +1,9 @@
 body{
-    background-color:rgb(165, 30, 30) ;
+    background-color:#FF0000 ;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 
@@ -112,24 +111,22 @@ a{
         margin-left: 70px;
         margin-right: 70px;
         background-color: rgba(0, 0, 0, 0);
-        box-shadow: none;
-        color:rgb(255, 255, 255) ; /* Ancho ajustado para móviles */
+        box-shadow: none; /* Eliminar sombra para móviles */
+        color:#FF0000;
+        text-shadow:none; /* Ancho ajustado para móviles */
     }
     
 
     #pokemon-container {
         width: 95%; /* Aumentar el ancho para mejor uso del espacio */
         padding: 1.5px;
-        max: width 100px;
+        max-width: 400px;
         background-color: yellowgreen;
         color: rgba(49, 44, 44, 0.863);
         border-color: #00000000;
         box-shadow: none;
         border-color: #1f1b1bbe;
         border-width: 5px;
-        margin: 10px auto; /* Centrado y con menos margen */
-        padding: 10px; /* Menos padding para móviles */
-        border-radius: 10px;
     }
 
     #pokemon-image {
@@ -142,6 +139,7 @@ a{
         width: 70%; /* Campo de entrada más ancho para mejor interacción táctil */
         padding: 10px;
         margin-bottom: 20px;
+        margin-left: 60px;
         background-color: yellowgreen;
         border-color: #3a3535cb;
         border-width: 3px;
@@ -151,12 +149,15 @@ a{
     #search-button {
         padding: 10px 20px;
         margin-bottom: 15px;
-         /* Botón más grande para tocarlo más fácilmente */
+        margin-left: 0px; 
+        margin-right: 10px;/* Botón más grande para tocarlo más fácilmente */
     }
 
     #container-search {
         display: flex;
-        flex-direction: column; /* Apilar la entrada y el botón verticalmente */
-        align-items: center; /* Centrar horizontalmente */
+        flex-direction: row; /* Elementos en línea */
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Espacio entre input y botón */
     }
 }
