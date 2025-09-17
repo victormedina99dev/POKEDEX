@@ -1,5 +1,5 @@
 body{
-    background-color:#FF0000 ;
+    background-color:#CC0000;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -14,8 +14,8 @@ a{
 
 #pokemon-container {
     margin-top: 20px;
-    background-color: azure;
-    color: black;
+    background-color: yellowgreen;
+    color: rgb(63, 56, 56);
     border-color: rgb(0, 0, 0);
     box-shadow: 5px 10px 18px #1a0303;
     border: 1px solid #ccc; 
@@ -38,13 +38,13 @@ a{
 #title{
     font-size: 2em;
     margin-bottom: 10px;
-    color: rgb(150, 12, 12);
+    color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
-    background-color: white;
+    
     border-radius: 50px;
     margin-left: 350px;
     margin-right: 350px;
-    box-shadow: 5px 10px 18px #1a0303;
+    
     
     
 }
@@ -66,10 +66,11 @@ a{
     margin-bottom:40px;
     padding-bottom: 10px;
     padding-top: 10px;
+    background-color: yellowgreen;
 }
 
 #search-button{
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-size: 1em;
     border-radius: 15px;
     border: none;
@@ -107,13 +108,15 @@ a{
     #title{
         font-size: 1.5em;
         margin: 10px auto; /* Centrado y con menos margen */
-        max-width: 90%;
+        max-width: 90%;/* Ancho ajustado para móviles */
         margin-left: 70px;
         margin-right: 70px;
         background-color: rgba(0, 0, 0, 0);
         box-shadow: none; /* Eliminar sombra para móviles */
-        color:#FF0000;
-        text-shadow:none; /* Ancho ajustado para móviles */
+        color:#CC0000;
+        text-shadow:none;
+        border-color: #000000;
+        
     }
     
 
@@ -130,7 +133,7 @@ a{
     }
 
     #pokemon-image {
-        width: 30%;
+        width: 45%;
         height: auto;
         /* Ajustar el tamaño de la imagen */
     }
@@ -139,7 +142,8 @@ a{
         width: 70%; /* Campo de entrada más ancho para mejor interacción táctil */
         padding: 10px;
         margin-bottom: 20px;
-        margin-left: 60px;
+        margin-left: 150px;
+        margin-right: 10px;
         background-color: yellowgreen;
         border-color: #3a3535cb;
         border-width: 3px;
@@ -147,10 +151,10 @@ a{
     }
 
     #search-button {
-        padding: 10px 20px;
+        padding: 10px 10px;
         margin-bottom: 15px;
         margin-left: 0px; 
-        margin-right: 10px;/* Botón más grande para tocarlo más fácilmente */
+        margin-right: 150px;/* Botón más grande para tocarlo más fácilmente */
     }
 
     #container-search {
