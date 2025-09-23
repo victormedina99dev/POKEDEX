@@ -13,19 +13,21 @@
         <h1>Pokédex</h1>
     </div>
     </a>
-    <div id="container-search">
-        <input id="pokemon-input" placeholder="Ingresa el Nombre o la ID del pokemon" type="text" />
-        <button id="search-button">Buscar</button>
+    
+    <div id="case-container">
+        <div id="container-search">
+            <input id="pokemon-input" placeholder="Ingresa el Nombre o la ID del pokemon" type="text" />
+        </div>
+        <div class="pokemon-flex-row">
+            <a href="#"><img id="palanca-img" src="img/palanca-de-mando-negra.png" alt=""></a>
+            <div id="pokemon-container">
+                <h2 id="pokemon-name">Esperando tu busqueda...</h2>
+                <img id="pokemon-image" src="img/pokemon-ir.png" alt="Imagen de Pokémon">
+                <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
+                <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p>
+            </div>
+            <button type="button" class="btn btn-success" id="search-button">B</button>
+        </div>
     </div>
-
-    <a href="#"><div id="pokemon-container">
-        <h2 id="pokemon-name">Esperando tu busqueda...</h2>
-        <img id="pokemon-image" src="img/pokemon-ir.png" alt="Imagen de Pokémon">
-        <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
-        <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p>
-    </div>
-    </a>
-
-
 </body>
 </html>

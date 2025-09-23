@@ -13,8 +13,14 @@ const searchButton = document.getElementById('search-button');
 
 // La función principal para obtener los datos de un Pokémon.
 async function fetchPokemonData() {
-    
-    const pokemonName = pokemonSearch.value;
+    const pokemonName = pokemonSearch.value.trim();
+    if (!pokemonName) {
+        pokemonNameElement.textContent = "¡Error! Ingresa un nombre o ID";
+        pokemonImageElement.src = "img/pokemon-ir.png";
+        pokemonIdElement.textContent = "Busqueda vacía...";
+        pokemonTypeElement.textContent = "Busqueda vacía...";
+        return;
+    }
 
     try {
         // Hace la solicitud GET a la API usando la función fetch().
