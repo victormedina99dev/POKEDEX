@@ -6,6 +6,7 @@
     <title>Pokédex</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="img/pokedex.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <script src="js/index.js" ></script>
@@ -25,10 +26,11 @@
                 <h2 id="pokemon-name">Esperando tu busqueda...</h2>
                 <img id="pokemon-image" src="img/pokemon-ir.png" alt="Imagen de Pokémon">
                 <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
-                <p><strong>Región:</strong> <span id="pokemon-region"></span></p>
                 <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p>
                 <p><strong>Poder Promedio de Movimientos:</strong> <span id="average-move-power"></span></p>
                 <p><strong>Poder Promedio del Pokémon:</strong> <span id="average-pokemon-power"></span></p>
+                <canvas id="stats-chart"></canvas>
+                <div id="pokemon-stats"></div>
                 <p id="pokemon-moves"></p>
             </div>
             <button type="button" class="btn btn-success" id="search-button">B</button>
