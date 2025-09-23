@@ -43,6 +43,8 @@ a {
     max-width: 700px;
     margin: 0 auto;
     box-sizing: border-box;
+    max-height: 500px; 
+    overflow-y: auto; 
 }
 
 #pokemon-image {
@@ -115,6 +117,21 @@ a {
     margin-top: 150px; /* Centra la imagen */
     box-shadow: inset 2px 2px 5px #000000;
     border-radius: 50px ;
+}
+
+#pokemon-moves {
+    /* Limita la altura del contenedor para que no se expanda. */
+    max-height: 150px; 
+    
+    /* Agrega una barra de desplazamiento vertical cuando el contenido excede el límite de altura. */
+    overflow-y: scroll;
+
+    /* Estilos de apariencia para mejorar el diseño (opcional) */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00000093; 
+    border-radius: 5px;
+    color: rgb(255, 249, 249);
 }
 
 @media (max-width: 700px) {
